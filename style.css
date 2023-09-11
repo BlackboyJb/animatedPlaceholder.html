@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+
+
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.card-container {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 350px;
+    overflow: hidden;
+    color: white;
+}
+
+.card-header {
+    height: 200px;
+
+}
+
+.card-header img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-title {
+    height: 40px;
+    margin: 0;
+}
+
+.card-excerpt {
+    background-color: white;
+    margin: 10px 0 20px;
+    color: black;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.profile {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    width: 130px;
+
+}
+
+
+
+
+
+.animated-bg {
+    background-image: linear-gradient(to right, black 0%, white 10%, black 20%, black 100%);
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 100%
+}
+
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: -150% 0;
+    }
+}
